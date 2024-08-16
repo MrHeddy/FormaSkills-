@@ -7,10 +7,11 @@ export default function RegisterForm() {
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
     const[error, setError] = useState('bite');
+    const [isClose, setIsOpen] = useState(false);
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center transition-opacity duration-300">
+        <div className="fixed inset-0 bg-black bg-opacity-100 flex justify-center items-center transition-opacity duration-300">
             <div className="bg-gray-900 bg-gradient-radial p-5 rounded-md shadow-lg max-w-sm mx-auto transition-opacity duration-300 border-2 border-white ">
-               <button>Close</button> 
+               <Link href="/"><button>Close</button></Link>
                 <form>
                     <p>Email</p>
                     <input type="text"/>

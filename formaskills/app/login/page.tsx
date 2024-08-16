@@ -1,6 +1,6 @@
 "use client";
 import LoginForm from "@/components/LoginForm";
-import { Menu } from "@/components/Menu";
+import  {Menu}  from "@/components/Menu";
 
 export default function Home() {
   return (
